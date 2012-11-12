@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "RPIDbUnitOfWork.h"
 
+extern id<RPIDbUnitOfWork> dbUnitOfWork;
 @interface RPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) id<RPIDbUnitOfWork> dbUnitOfWork;
 @end

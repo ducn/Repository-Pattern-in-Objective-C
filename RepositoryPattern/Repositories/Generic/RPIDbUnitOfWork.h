@@ -14,4 +14,5 @@
 @property(nonatomic,strong,readonly) id<RPIRepository> userRepository;
 @property(nonatomic,strong,readonly) id<RPIRepository> photoRepository;
 - (void) saveChanges;
++ (id<RPIDbUnitOfWork>) sharedInstance;
 @end
