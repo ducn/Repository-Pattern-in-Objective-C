@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @protocol RPIRepository
+
+@required
 - (id)          newModel;
 - (NSArray*)    getObjects;
 - (void)        remove:(id)object;
+
 @end

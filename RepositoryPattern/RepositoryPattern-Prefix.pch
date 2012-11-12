@@ -12,7 +12,11 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+    #import <objc/runtime.h>
+    #import "AFHTTPRequestOperation.h"
+    #import "RPAppDelegate.h"
     #import "RPIDbUnitOfWork.h"
+    #import "RPHTTPClient.h"
 #endif
 
 // Core data stuff

@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "BaseManagedObjectModel.h"
 
-
-@interface _Photo : NSManagedObject
+@interface _Photo : BaseManagedObjectModel
 
 @property (nonatomic, retain) NSNumber * photoId;
 @property (nonatomic, retain) NSString * thumbUrl;
