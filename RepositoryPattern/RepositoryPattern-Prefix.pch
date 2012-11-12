@@ -12,6 +12,9 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+    #import "User.h"
+    #import "Photo.h"
+    #import "RPAppDelegate.h"
 #endif
 
 // Core data stuff

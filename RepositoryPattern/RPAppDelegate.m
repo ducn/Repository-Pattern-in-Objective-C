@@ -8,32 +8,29 @@
 
 #import "RPAppDelegate.h"
 #import "RPCoreDataUnitOfWork.h"
-#import "User.h"
-#import "Photo.h"
+#import "RPMockUnitOfWork.h"
+#import "RPSampleController.h"
+
+id<RPIDbUnitOfWork> dbUnitOfWork;
 
 @implementation RPAppDelegate
 
 @synthesize window = _window;
-@synthesize dbUnitOfWork = _dbUnitOfWork;
 
 
 - (void) initializeRepository{
-    _dbUnitOfWork = [[RPCoreDataUnitOfWork alloc] init];
-    id users = [[_dbUnitOfWork userRepository] getObjects];
-    NSLog(@"%@ users",users);
-    User *user =[[_dbUnitOfWork userRepository] newModel];
-    user.name = @"test";
-    user.email = @"test@yahoo.com";
-    [_dbUnitOfWork saveChanges];
+    dbUnitOfWork = [RPMockUnitOfWork sharedInstance];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self initializeRepository];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    RPSampleController *sample = [[RPSampleController alloc] initWithNibName:@"RPSampleView" bundle:nil];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:sample];
     [self.window makeKeyAndVisible];
-    [self initializeRepository];
     return YES;
 }
 
@@ -71,6 +68,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
-    [_dbUnitOfWork saveChanges];
+    [dbUnitOfWork saveChanges];
 }
 @end

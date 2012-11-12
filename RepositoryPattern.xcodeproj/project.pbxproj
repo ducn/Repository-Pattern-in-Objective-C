@@ -19,9 +19,15 @@
 		0F36ADA215DE361A0020A7D5 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA115DE361A0020A7D5 /* _Photo.m */; };
 		0F36ADA515DE363D0020A7D5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA415DE363D0020A7D5 /* Photo.m */; };
 		0F36ADA815DE364D0020A7D5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA715DE364D0020A7D5 /* User.m */; };
-		0F36ADAB15DE36820020A7D5 /* RPCoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADAA15DE36820020A7D5 /* RPCoreDataContext.m */; };
-		0F36ADAE15DE36910020A7D5 /* RPCoreDataUnitOfWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADAD15DE36910020A7D5 /* RPCoreDataUnitOfWork.m */; };
-		0F36ADB415DE36F10020A7D5 /* RPGenericRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADB315DE36F10020A7D5 /* RPGenericRepository.m */; };
+		0F405A011650A7820042C6AC /* RPCoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4059F71650A7820042C6AC /* RPCoreDataContext.m */; };
+		0F405A021650A7820042C6AC /* RPCoreDataUnitOfWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4059F91650A7820042C6AC /* RPCoreDataUnitOfWork.m */; };
+		0F405A031650A7820042C6AC /* RPGenericRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4059FC1650A7820042C6AC /* RPGenericRepository.m */; };
+		0F405A061650A7A20042C6AC /* RPMockUnitOfWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F405A051650A7A20042C6AC /* RPMockUnitOfWork.m */; };
+		0F405A0A1650A8A90042C6AC /* RPUserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F405A091650A8A90042C6AC /* RPUserRepository.m */; };
+		0F405A101650AA620042C6AC /* RPUserMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F405A0F1650AA620042C6AC /* RPUserMockRepository.m */; };
+		0F405A161650AB2D0042C6AC /* RPGenericMockRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F405A151650AB2D0042C6AC /* RPGenericMockRepository.m */; };
+		0F405A191650AD920042C6AC /* RPSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F405A181650AD920042C6AC /* RPSampleController.m */; };
+		0F405A1B1650ADD20042C6AC /* RPSampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F405A1A1650ADD20042C6AC /* RPSampleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,15 +51,27 @@
 		0F36ADA415DE363D0020A7D5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		0F36ADA615DE364D0020A7D5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0F36ADA715DE364D0020A7D5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		0F36ADA915DE36820020A7D5 /* RPCoreDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataContext.h; sourceTree = "<group>"; };
-		0F36ADAA15DE36820020A7D5 /* RPCoreDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataContext.m; sourceTree = "<group>"; };
-		0F36ADAC15DE36910020A7D5 /* RPCoreDataUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataUnitOfWork.h; sourceTree = "<group>"; };
-		0F36ADAD15DE36910020A7D5 /* RPCoreDataUnitOfWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataUnitOfWork.m; sourceTree = "<group>"; };
-		0F36ADAF15DE36C10020A7D5 /* RPIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIRepository.h; sourceTree = "<group>"; };
-		0F36ADB215DE36F10020A7D5 /* RPGenericRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGenericRepository.h; sourceTree = "<group>"; };
-		0F36ADB315DE36F10020A7D5 /* RPGenericRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGenericRepository.m; sourceTree = "<group>"; };
-		0F36ADB515DE37580020A7D5 /* RPIDbUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbUnitOfWork.h; sourceTree = "<group>"; };
-		0F36ADBC15DE41940020A7D5 /* RPIDbContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbContext.h; sourceTree = "<group>"; };
+		0F4059F61650A7820042C6AC /* RPCoreDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataContext.h; sourceTree = "<group>"; };
+		0F4059F71650A7820042C6AC /* RPCoreDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataContext.m; sourceTree = "<group>"; };
+		0F4059F81650A7820042C6AC /* RPCoreDataUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataUnitOfWork.h; sourceTree = "<group>"; };
+		0F4059F91650A7820042C6AC /* RPCoreDataUnitOfWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataUnitOfWork.m; sourceTree = "<group>"; };
+		0F4059FB1650A7820042C6AC /* RPGenericRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGenericRepository.h; sourceTree = "<group>"; };
+		0F4059FC1650A7820042C6AC /* RPGenericRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGenericRepository.m; sourceTree = "<group>"; };
+		0F4059FD1650A7820042C6AC /* RPIDbContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbContext.h; sourceTree = "<group>"; };
+		0F4059FE1650A7820042C6AC /* RPIDbUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbUnitOfWork.h; sourceTree = "<group>"; };
+		0F4059FF1650A7820042C6AC /* RPIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIRepository.h; sourceTree = "<group>"; };
+		0F405A041650A7A20042C6AC /* RPMockUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPMockUnitOfWork.h; sourceTree = "<group>"; };
+		0F405A051650A7A20042C6AC /* RPMockUnitOfWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPMockUnitOfWork.m; sourceTree = "<group>"; };
+		0F405A081650A8A90042C6AC /* RPUserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUserRepository.h; sourceTree = "<group>"; };
+		0F405A091650A8A90042C6AC /* RPUserRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPUserRepository.m; sourceTree = "<group>"; };
+		0F405A0B1650A9140042C6AC /* RPIUserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIUserRepository.h; sourceTree = "<group>"; };
+		0F405A0E1650AA620042C6AC /* RPUserMockRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPUserMockRepository.h; sourceTree = "<group>"; };
+		0F405A0F1650AA620042C6AC /* RPUserMockRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPUserMockRepository.m; sourceTree = "<group>"; };
+		0F405A141650AB2D0042C6AC /* RPGenericMockRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGenericMockRepository.h; sourceTree = "<group>"; };
+		0F405A151650AB2D0042C6AC /* RPGenericMockRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGenericMockRepository.m; sourceTree = "<group>"; };
+		0F405A171650AD920042C6AC /* RPSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSampleController.h; sourceTree = "<group>"; };
+		0F405A181650AD920042C6AC /* RPSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSampleController.m; sourceTree = "<group>"; };
+		0F405A1A1650ADD20042C6AC /* RPSampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RPSampleView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +146,8 @@
 		0F36AD9015DE2C360020A7D5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0F405A171650AD920042C6AC /* RPSampleController.h */,
+				0F405A181650AD920042C6AC /* RPSampleController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,15 +170,9 @@
 		0F36AD9215DE2C360020A7D5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				0F36ADA915DE36820020A7D5 /* RPCoreDataContext.h */,
-				0F36ADAA15DE36820020A7D5 /* RPCoreDataContext.m */,
-				0F36ADAC15DE36910020A7D5 /* RPCoreDataUnitOfWork.h */,
-				0F36ADAD15DE36910020A7D5 /* RPCoreDataUnitOfWork.m */,
-				0F36ADB215DE36F10020A7D5 /* RPGenericRepository.h */,
-				0F36ADB315DE36F10020A7D5 /* RPGenericRepository.m */,
-				0F36ADB515DE37580020A7D5 /* RPIDbUnitOfWork.h */,
-				0F36ADAF15DE36C10020A7D5 /* RPIRepository.h */,
-				0F36ADBC15DE41940020A7D5 /* RPIDbContext.h */,
+				0F4059F51650A7820042C6AC /* CoreData */,
+				0F4059FA1650A7820042C6AC /* Generic */,
+				0F405A001650A7820042C6AC /* Mock */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -174,8 +188,48 @@
 		0F36AD9415DE2C360020A7D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0F405A1A1650ADD20042C6AC /* RPSampleView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0F4059F51650A7820042C6AC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0F4059F61650A7820042C6AC /* RPCoreDataContext.h */,
+				0F4059F71650A7820042C6AC /* RPCoreDataContext.m */,
+				0F4059F81650A7820042C6AC /* RPCoreDataUnitOfWork.h */,
+				0F4059F91650A7820042C6AC /* RPCoreDataUnitOfWork.m */,
+				0F405A081650A8A90042C6AC /* RPUserRepository.h */,
+				0F405A091650A8A90042C6AC /* RPUserRepository.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0F4059FA1650A7820042C6AC /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				0F4059FB1650A7820042C6AC /* RPGenericRepository.h */,
+				0F4059FC1650A7820042C6AC /* RPGenericRepository.m */,
+				0F4059FD1650A7820042C6AC /* RPIDbContext.h */,
+				0F4059FE1650A7820042C6AC /* RPIDbUnitOfWork.h */,
+				0F4059FF1650A7820042C6AC /* RPIRepository.h */,
+				0F405A0B1650A9140042C6AC /* RPIUserRepository.h */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		0F405A001650A7820042C6AC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0F405A041650A7A20042C6AC /* RPMockUnitOfWork.h */,
+				0F405A051650A7A20042C6AC /* RPMockUnitOfWork.m */,
+				0F405A141650AB2D0042C6AC /* RPGenericMockRepository.h */,
+				0F405A151650AB2D0042C6AC /* RPGenericMockRepository.m */,
+				0F405A0E1650AA620042C6AC /* RPUserMockRepository.h */,
+				0F405A0F1650AA620042C6AC /* RPUserMockRepository.m */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F36AD8115DE2BF00020A7D5 /* InfoPlist.strings in Resources */,
+				0F405A1B1650ADD20042C6AC /* RPSampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,9 +301,14 @@
 				0F36ADA215DE361A0020A7D5 /* _Photo.m in Sources */,
 				0F36ADA515DE363D0020A7D5 /* Photo.m in Sources */,
 				0F36ADA815DE364D0020A7D5 /* User.m in Sources */,
-				0F36ADAB15DE36820020A7D5 /* RPCoreDataContext.m in Sources */,
-				0F36ADAE15DE36910020A7D5 /* RPCoreDataUnitOfWork.m in Sources */,
-				0F36ADB415DE36F10020A7D5 /* RPGenericRepository.m in Sources */,
+				0F405A011650A7820042C6AC /* RPCoreDataContext.m in Sources */,
+				0F405A021650A7820042C6AC /* RPCoreDataUnitOfWork.m in Sources */,
+				0F405A031650A7820042C6AC /* RPGenericRepository.m in Sources */,
+				0F405A061650A7A20042C6AC /* RPMockUnitOfWork.m in Sources */,
+				0F405A0A1650A8A90042C6AC /* RPUserRepository.m in Sources */,
+				0F405A101650AA620042C6AC /* RPUserMockRepository.m in Sources */,
+				0F405A161650AB2D0042C6AC /* RPGenericMockRepository.m in Sources */,
+				0F405A191650AD920042C6AC /* RPSampleController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

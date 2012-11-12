@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "RPIRepository.h"
-
+#import "RPIUserRepository.h"
 @protocol RPIDbUnitOfWork
 @required
-@property(nonatomic,strong,readonly) id<RPIRepository> userRepository;
++ (id<RPIDbUnitOfWork>) sharedInstance;
+@property(nonatomic,strong,readonly) id<RPIUserRepository> userRepository;
 @property(nonatomic,strong,readonly) id<RPIRepository> photoRepository;
 - (void) saveChanges;
 @end
