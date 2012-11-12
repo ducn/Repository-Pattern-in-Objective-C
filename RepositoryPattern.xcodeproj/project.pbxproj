@@ -19,9 +19,9 @@
 		0F36ADA215DE361A0020A7D5 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA115DE361A0020A7D5 /* _Photo.m */; };
 		0F36ADA515DE363D0020A7D5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA415DE363D0020A7D5 /* Photo.m */; };
 		0F36ADA815DE364D0020A7D5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA715DE364D0020A7D5 /* User.m */; };
-		0F36ADAB15DE36820020A7D5 /* RPCoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADAA15DE36820020A7D5 /* RPCoreDataContext.m */; };
-		0F36ADAE15DE36910020A7D5 /* RPCoreDataUnitOfWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADAD15DE36910020A7D5 /* RPCoreDataUnitOfWork.m */; };
-		0F36ADB415DE36F10020A7D5 /* RPGenericRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADB315DE36F10020A7D5 /* RPGenericRepository.m */; };
+		0FDF7B521650B7A6003F8412 /* RPCoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF7B491650B7A6003F8412 /* RPCoreDataContext.m */; };
+		0FDF7B531650B7A6003F8412 /* RPCoreDataUnitOfWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF7B4B1650B7A6003F8412 /* RPCoreDataUnitOfWork.m */; };
+		0FDF7B541650B7A6003F8412 /* RPGenericRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF7B4E1650B7A6003F8412 /* RPGenericRepository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,15 +45,15 @@
 		0F36ADA415DE363D0020A7D5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		0F36ADA615DE364D0020A7D5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0F36ADA715DE364D0020A7D5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		0F36ADA915DE36820020A7D5 /* RPCoreDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataContext.h; sourceTree = "<group>"; };
-		0F36ADAA15DE36820020A7D5 /* RPCoreDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataContext.m; sourceTree = "<group>"; };
-		0F36ADAC15DE36910020A7D5 /* RPCoreDataUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataUnitOfWork.h; sourceTree = "<group>"; };
-		0F36ADAD15DE36910020A7D5 /* RPCoreDataUnitOfWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataUnitOfWork.m; sourceTree = "<group>"; };
-		0F36ADAF15DE36C10020A7D5 /* RPIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIRepository.h; sourceTree = "<group>"; };
-		0F36ADB215DE36F10020A7D5 /* RPGenericRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGenericRepository.h; sourceTree = "<group>"; };
-		0F36ADB315DE36F10020A7D5 /* RPGenericRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGenericRepository.m; sourceTree = "<group>"; };
-		0F36ADB515DE37580020A7D5 /* RPIDbUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbUnitOfWork.h; sourceTree = "<group>"; };
-		0F36ADBC15DE41940020A7D5 /* RPIDbContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbContext.h; sourceTree = "<group>"; };
+		0FDF7B481650B7A6003F8412 /* RPCoreDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataContext.h; sourceTree = "<group>"; };
+		0FDF7B491650B7A6003F8412 /* RPCoreDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataContext.m; sourceTree = "<group>"; };
+		0FDF7B4A1650B7A6003F8412 /* RPCoreDataUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCoreDataUnitOfWork.h; sourceTree = "<group>"; };
+		0FDF7B4B1650B7A6003F8412 /* RPCoreDataUnitOfWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCoreDataUnitOfWork.m; sourceTree = "<group>"; };
+		0FDF7B4D1650B7A6003F8412 /* RPGenericRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPGenericRepository.h; sourceTree = "<group>"; };
+		0FDF7B4E1650B7A6003F8412 /* RPGenericRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPGenericRepository.m; sourceTree = "<group>"; };
+		0FDF7B4F1650B7A6003F8412 /* RPIDbContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbContext.h; sourceTree = "<group>"; };
+		0FDF7B501650B7A6003F8412 /* RPIDbUnitOfWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIDbUnitOfWork.h; sourceTree = "<group>"; };
+		0FDF7B511650B7A6003F8412 /* RPIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPIRepository.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,15 +150,8 @@
 		0F36AD9215DE2C360020A7D5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				0F36ADA915DE36820020A7D5 /* RPCoreDataContext.h */,
-				0F36ADAA15DE36820020A7D5 /* RPCoreDataContext.m */,
-				0F36ADAC15DE36910020A7D5 /* RPCoreDataUnitOfWork.h */,
-				0F36ADAD15DE36910020A7D5 /* RPCoreDataUnitOfWork.m */,
-				0F36ADB215DE36F10020A7D5 /* RPGenericRepository.h */,
-				0F36ADB315DE36F10020A7D5 /* RPGenericRepository.m */,
-				0F36ADB515DE37580020A7D5 /* RPIDbUnitOfWork.h */,
-				0F36ADAF15DE36C10020A7D5 /* RPIRepository.h */,
-				0F36ADBC15DE41940020A7D5 /* RPIDbContext.h */,
+				0FDF7B471650B7A6003F8412 /* CoreData */,
+				0FDF7B4C1650B7A6003F8412 /* Generic */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -176,6 +169,29 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0FDF7B471650B7A6003F8412 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF7B481650B7A6003F8412 /* RPCoreDataContext.h */,
+				0FDF7B491650B7A6003F8412 /* RPCoreDataContext.m */,
+				0FDF7B4A1650B7A6003F8412 /* RPCoreDataUnitOfWork.h */,
+				0FDF7B4B1650B7A6003F8412 /* RPCoreDataUnitOfWork.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0FDF7B4C1650B7A6003F8412 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF7B4D1650B7A6003F8412 /* RPGenericRepository.h */,
+				0FDF7B4E1650B7A6003F8412 /* RPGenericRepository.m */,
+				0FDF7B4F1650B7A6003F8412 /* RPIDbContext.h */,
+				0FDF7B501650B7A6003F8412 /* RPIDbUnitOfWork.h */,
+				0FDF7B511650B7A6003F8412 /* RPIRepository.h */,
+			);
+			path = Generic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +262,9 @@
 				0F36ADA215DE361A0020A7D5 /* _Photo.m in Sources */,
 				0F36ADA515DE363D0020A7D5 /* Photo.m in Sources */,
 				0F36ADA815DE364D0020A7D5 /* User.m in Sources */,
-				0F36ADAB15DE36820020A7D5 /* RPCoreDataContext.m in Sources */,
-				0F36ADAE15DE36910020A7D5 /* RPCoreDataUnitOfWork.m in Sources */,
-				0F36ADB415DE36F10020A7D5 /* RPGenericRepository.m in Sources */,
+				0FDF7B521650B7A6003F8412 /* RPCoreDataContext.m in Sources */,
+				0FDF7B531650B7A6003F8412 /* RPCoreDataUnitOfWork.m in Sources */,
+				0FDF7B541650B7A6003F8412 /* RPGenericRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

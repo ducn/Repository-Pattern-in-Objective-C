@@ -11,20 +11,22 @@
 #import "User.h"
 #import "Photo.h"
 
+
 @implementation RPAppDelegate
 
-@synthesize window = _window;
-@synthesize dbUnitOfWork = _dbUnitOfWork;
 
+@synthesize window = _window;
+
+id<RPIDbUnitOfWork> dbUnitOfWork;
 
 - (void) initializeRepository{
-    _dbUnitOfWork = [[RPCoreDataUnitOfWork alloc] init];
-    id users = [[_dbUnitOfWork userRepository] getObjects];
+    dbUnitOfWork = [RPCoreDataUnitOfWork sharedInstance];
+    id users = [[dbUnitOfWork userRepository] getObjects];
     NSLog(@"%@ users",users);
-    User *user =[[_dbUnitOfWork userRepository] newModel];
+    User *user =[[dbUnitOfWork userRepository] newModel];
     user.name = @"test";
     user.email = @"test@yahoo.com";
-    [_dbUnitOfWork saveChanges];
+    [dbUnitOfWork saveChanges];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -71,6 +73,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
-    [_dbUnitOfWork saveChanges];
+    [dbUnitOfWork saveChanges];
 }
 @end

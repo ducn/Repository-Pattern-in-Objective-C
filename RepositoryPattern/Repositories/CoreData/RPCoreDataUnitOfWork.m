@@ -13,12 +13,26 @@
 #import "Photo.h"
 
 @implementation RPCoreDataUnitOfWork
+static id _sharedObject;
+
 -(id) init{
-    self = [super init];
-    if (self) {
-        dbContext = [[RPCoreDataContext alloc] init];
+    if (_sharedObject) {
+        return _sharedObject;
     }
-    return self;
+    else{
+        self = [super init];
+        if (self) {
+            dbContext = [[RPCoreDataContext alloc] init];
+        }
+        return self;
+    }
+}
++ (id<RPIDbUnitOfWork>)sharedInstance{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedObject = [[RPCoreDataUnitOfWork alloc] init];
+    });
+    return _sharedObject;
 }
 - (id<RPIRepository>) userRepository{
     return [[RPGenericRepository alloc] initWithDbContext:dbContext withModel:[User class]];
