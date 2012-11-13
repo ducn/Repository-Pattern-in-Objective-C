@@ -13,9 +13,14 @@
 
 @protocol RPIDbUnitOfWork
 @required
+/* Describe your repository property here */
+// User repository for User model
 @property(nonatomic,strong,readonly) id<RPIRepository> userRepository;
+// Photo repository for Photo model
 @property(nonatomic,strong,readonly) id<RPIRepository> photoRepository;
+// City repository for City model
 @property(nonatomic,strong,readonly) id<RPICityRepository> cityRepository;
+// Weather repository for Weather model
 @property(nonatomic,strong,readonly) id<RPIWeatherRepository> weatherRepository;
 
 - (void) saveChanges;
