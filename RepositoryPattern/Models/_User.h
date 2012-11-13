@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "BaseManagedObjectModel.h"
 
-
-@interface _User : NSManagedObject
+@interface _User : BaseManagedObjectModel
 
 @property (nonatomic, retain) NSNumber * userId;
 @property (nonatomic, retain) NSString * name;

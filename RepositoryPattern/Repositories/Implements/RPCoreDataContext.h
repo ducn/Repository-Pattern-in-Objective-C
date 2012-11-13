@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "RPIDbContext.h"
+
 @interface RPCoreDataContext : NSObject<RPIDbContext>{
-    NSManagedObjectContext *_managedObjectContext;
+    NSManagedObjectContext *_foregroundObjectContext;
+    NSManagedObjectContext *_backgroundObjectContext;
     NSManagedObjectModel *_managedObjectModel;
     NSPersistentStoreCoordinator *_persistentStoreCoordinator;
 }

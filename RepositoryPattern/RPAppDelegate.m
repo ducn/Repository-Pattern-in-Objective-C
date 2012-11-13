@@ -10,30 +10,29 @@
 #import "RPCoreDataUnitOfWork.h"
 #import "User.h"
 #import "Photo.h"
+#import "RPCityViewController.h"
 
 @implementation RPAppDelegate
 
-@synthesize window = _window;
-@synthesize dbUnitOfWork = _dbUnitOfWork;
 
+@synthesize window = _window;
+
+id<RPIDbUnitOfWork> dbUnitOfWork;
 
 - (void) initializeRepository{
-    _dbUnitOfWork = [[RPCoreDataUnitOfWork alloc] init];
-    id users = [[_dbUnitOfWork userRepository] getObjects];
-    NSLog(@"%@ users",users);
-    User *user =[[_dbUnitOfWork userRepository] newModel];
-    user.name = @"test";
-    user.email = @"test@yahoo.com";
-    [_dbUnitOfWork saveChanges];
+    dbUnitOfWork = [RPCoreDataUnitOfWork sharedInstance];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self initializeRepository];
+    RPCityViewController *city = [[RPCityViewController alloc] initWithNibName:@"RPCityView" bundle:nil];
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:city];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:navigation];
     [self.window makeKeyAndVisible];
-    [self initializeRepository];
     return YES;
 }
 
@@ -71,6 +70,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
-    [_dbUnitOfWork saveChanges];
+    [dbUnitOfWork saveChanges];
 }
 @end
