@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="City" representedClassName="_City" syncable="YES">
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fcl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="geonameId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toponymName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Photo" representedClassName="_Photo" syncable="YES">
         <attribute name="largeUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="medUrl" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,7 +24,8 @@
         <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="Photo" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="City" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="Photo" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="User" positionX="0" positionY="0" width="128" height="105"/>
     </elements>
 </model>

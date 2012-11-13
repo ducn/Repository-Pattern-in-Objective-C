@@ -10,7 +10,7 @@
 #import "RPCoreDataUnitOfWork.h"
 #import "User.h"
 #import "Photo.h"
-
+#import "RPCityViewController.h"
 
 @implementation RPAppDelegate
 
@@ -21,21 +21,18 @@ id<RPIDbUnitOfWork> dbUnitOfWork;
 
 - (void) initializeRepository{
     dbUnitOfWork = [RPCoreDataUnitOfWork sharedInstance];
-    id users = [[dbUnitOfWork userRepository] getObjects];
-    NSLog(@"%@ users",users);
-    User *user =[[dbUnitOfWork userRepository] newModel];
-    user.name = @"test";
-    user.email = @"test@yahoo.com";
-    [dbUnitOfWork saveChanges];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self initializeRepository];
+    RPCityViewController *city = [[RPCityViewController alloc] initWithNibName:@"RPCityView" bundle:nil];
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:city];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:navigation];
     [self.window makeKeyAndVisible];
-    [self initializeRepository];
     return YES;
 }
 

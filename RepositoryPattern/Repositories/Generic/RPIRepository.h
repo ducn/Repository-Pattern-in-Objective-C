@@ -9,7 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @protocol RPIRepository
-- (id)          newModel;
-- (NSArray*)    getObjects;
+
+@required
+- (id)          create;
+- (NSArray*)    getAll;
 - (void)        remove:(id)object;
+
+- (NSArray*)    find:(NSString*)where;
+- (NSArray*)    find:(NSString *)where take:(int) countItem;
+- (NSArray*)    find:(NSString*)where orderBy:(NSString*)orderByAttribute ascending:(BOOL)ascending;
+- (NSArray*)    find:(NSString*)where orderBy:(NSString*)orderByAttribute ascending:(BOOL)ascending take:(int)countItem;
 @end

@@ -11,6 +11,5 @@
 
 extern id<RPIDbUnitOfWork> dbUnitOfWork;
 @interface RPAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
 @end
