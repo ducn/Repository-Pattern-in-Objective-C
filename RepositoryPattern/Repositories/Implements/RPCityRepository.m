@@ -29,8 +29,8 @@
                         [city updateWithDictionary:responseCity];
                     }
                 } completion:^{
-                    // Reflect to UI when update finish
-                    NSArray *cities = [self getObjects];
+                    // Reflect to UI when update finish.
+                    NSArray *cities = [self getAll];
                     success(cities);
                 }];
                 
@@ -40,7 +40,7 @@
     }];
     
     // Return saved objects to display as real time as possible
-    id savedCities = [self getObjects];
+    id savedCities = [self getAll];
     success(savedCities);
 }
 @end

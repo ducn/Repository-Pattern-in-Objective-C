@@ -19,6 +19,8 @@
 		0F36ADA215DE361A0020A7D5 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA115DE361A0020A7D5 /* _Photo.m */; };
 		0F36ADA515DE363D0020A7D5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA415DE363D0020A7D5 /* Photo.m */; };
 		0F36ADA815DE364D0020A7D5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36ADA715DE364D0020A7D5 /* User.m */; };
+		0F9BEC2E1651EBC600F514B7 /* RPFakeCityRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9BEC2D1651EBC600F514B7 /* RPFakeCityRepository.m */; };
+		0F9BEC331651F37400F514B7 /* RPNSManagedObjectContext+Queryable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9BEC321651EE4C00F514B7 /* RPNSManagedObjectContext+Queryable.m */; };
 		0FAA98341651027100CCDEFC /* RPCityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA98301651027100CCDEFC /* RPCityView.xib */; };
 		0FAA98351651027100CCDEFC /* RPCityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA98321651027100CCDEFC /* RPCityViewCell.m */; };
 		0FAA98361651027100CCDEFC /* RPCityViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA98331651027100CCDEFC /* RPCityViewCell.xib */; };
@@ -70,6 +72,10 @@
 		0F36ADA415DE363D0020A7D5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		0F36ADA615DE364D0020A7D5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0F36ADA715DE364D0020A7D5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0F9BEC2C1651EBC600F514B7 /* RPFakeCityRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPFakeCityRepository.h; path = Fake/RPFakeCityRepository.h; sourceTree = "<group>"; };
+		0F9BEC2D1651EBC600F514B7 /* RPFakeCityRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPFakeCityRepository.m; path = Fake/RPFakeCityRepository.m; sourceTree = "<group>"; };
+		0F9BEC311651EE4C00F514B7 /* RPNSManagedObjectContext+Queryable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPNSManagedObjectContext+Queryable.h"; sourceTree = "<group>"; };
+		0F9BEC321651EE4C00F514B7 /* RPNSManagedObjectContext+Queryable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RPNSManagedObjectContext+Queryable.m"; sourceTree = "<group>"; };
 		0FAA98301651027100CCDEFC /* RPCityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RPCityView.xib; sourceTree = "<group>"; };
 		0FAA98311651027100CCDEFC /* RPCityViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCityViewCell.h; sourceTree = "<group>"; };
 		0FAA98321651027100CCDEFC /* RPCityViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCityViewCell.m; sourceTree = "<group>"; };
@@ -242,6 +248,7 @@
 				0FDF7BDC1650DCAA003F8412 /* Supports */,
 				0FDF7B4C1650B7A6003F8412 /* Generic */,
 				0FAA98371651037800CCDEFC /* Implements */,
+				0F9BEC2A1651EB7E00F514B7 /* Fake */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -261,6 +268,15 @@
 				0FD4EEAE1650FBC8000E23FE /* Weather */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0F9BEC2A1651EB7E00F514B7 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				0F9BEC2C1651EBC600F514B7 /* RPFakeCityRepository.h */,
+				0F9BEC2D1651EBC600F514B7 /* RPFakeCityRepository.m */,
+			);
+			name = Fake;
 			sourceTree = "<group>";
 		};
 		0FAA982F1651027100CCDEFC /* City */ = {
@@ -351,6 +367,8 @@
 		0FDF7BDC1650DCAA003F8412 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				0F9BEC311651EE4C00F514B7 /* RPNSManagedObjectContext+Queryable.h */,
+				0F9BEC321651EE4C00F514B7 /* RPNSManagedObjectContext+Queryable.m */,
 				0FDF7BDD1650DCAA003F8412 /* RPHTTPClient.h */,
 				0FDF7BDE1650DCAA003F8412 /* RPHTTPClient.m */,
 			);
@@ -453,6 +471,8 @@
 				0FAA98411651037800CCDEFC /* RPCoreDataContext.m in Sources */,
 				0FAA98421651037800CCDEFC /* RPCoreDataUnitOfWork.m in Sources */,
 				0FAA98431651037800CCDEFC /* RPWeatherRepository.m in Sources */,
+				0F9BEC2E1651EBC600F514B7 /* RPFakeCityRepository.m in Sources */,
+				0F9BEC331651F37400F514B7 /* RPNSManagedObjectContext+Queryable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

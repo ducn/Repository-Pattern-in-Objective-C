@@ -7,6 +7,7 @@
 //
 
 #import "RPCoreDataContext.h"
+#import "RPNSManagedObjectContext+Queryable.h"
 #import "User.h"
 @implementation RPCoreDataContext
 
@@ -130,8 +131,51 @@ dispatch_queue_t background_save_queue()
 
 }
 
+- (NSArray *)find:(NSString *)objectName where:(NSString *)conditions{
+    NSArray* result = [[[_foregroundObjectContext ofType:objectName]
+                         where:conditions] toArray];
+    return result;
+    
+}
 
+- (NSArray *)find:(NSString *)objectName where:(NSString *)conditions take:(int)countItem{
+    NSArray* result = [[[[_foregroundObjectContext ofType:objectName]
+                        where:conditions] take:countItem] toArray];
+    return result;
+}
 
+- (NSArray *)find:(NSString *)objectName where:(NSString *)conditions orderBy:(NSString *)orderByAttribute ascending:(BOOL)ascending{
+    if (ascending) {
+        NSArray* result = [[[[_foregroundObjectContext ofType:objectName]
+                             where:conditions]
+                            orderBy:orderByAttribute] toArray];
+        return result;
+    }
+    else{
+        NSArray* result = [[[[_foregroundObjectContext ofType:objectName]
+                             where:conditions]
+                            orderByDescending:orderByAttribute] toArray];
+        return result;
+    }
+}
+- (NSArray *)find:(NSString *)objectName where:(NSString *)conditions orderBy:(NSString *)orderByAttribute ascending:(BOOL)ascending take:(int)countItem{
+    if (ascending) {
+        NSArray* result = [[[[[_foregroundObjectContext ofType:objectName]
+                              where:conditions]
+                             orderBy:orderByAttribute]
+                            take:countItem]
+                           toArray];
+        return result;
+    }
+    else{
+        NSArray* result = [[[[[_foregroundObjectContext ofType:objectName]
+                              where:conditions]
+                             orderByDescending:orderByAttribute]
+                            take:countItem]
+                           toArray];
+        return result;
+    }
+}
 
 
 #pragma mark - Core Data stack

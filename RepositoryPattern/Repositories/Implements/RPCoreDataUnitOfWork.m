@@ -11,6 +11,7 @@
 #import "RPCoreDataContext.h"
 #import "RPICityRepository.h"
 #import "RPCityRepository.h"
+#import "RPFakeCityRepository.h"
 #import "RPWeatherRepository.h"
 #import "User.h"
 #import "Photo.h"
@@ -49,7 +50,14 @@ static id _sharedObject;
 }
 
 - (id<RPICityRepository>) cityRepository{
+    /*
+        return implemented repository
+     */
     return [[RPCityRepository alloc] initWithDbContext:dbContext withModel:[City class]];
+    /*
+        return Fake Repository
+     */
+    //return [[RPFakeCityRepository alloc] initWithDbContext:dbContext withModel:[City class]];
 }
 
 - (id<RPIWeatherRepository>) weatherRepository{
