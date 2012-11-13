@@ -25,6 +25,8 @@
 	// Do any additional setup after loading the view.
     [[dbUnitOfWork cityRepository] getCityFeed:^(NSArray *cities) {
         _cities = cities;
+        id result = [[dbUnitOfWork cityRepository] find:@"name == 'Seoul' or name == 'Jakatar'"];
+        NSLog(@"query result: %@",result);
         [tableView reloadData];
     } fail:^(int statusCode, NSError *error) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"

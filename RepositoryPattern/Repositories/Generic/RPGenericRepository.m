@@ -18,11 +18,11 @@
     }
     return self;
 }
-- (NSArray *)getObjects{
+- (NSArray *)getAll{
     return [dbContext getObjects:modelClass];
 }
 
-- (id)newModel{
+- (id)create{
     return [dbContext attachObject:modelClass];
 }
 
@@ -30,4 +30,17 @@
     [dbContext removeManagedObject:object];
 }
 
+- (NSArray *)find:(NSString *)where{
+    return [dbContext find:[modelClass description] where:where];
+}
+- (NSArray *)find:(NSString *)where take:(int) countItem{
+    return [dbContext find:[modelClass description] where:where take:countItem];
+}
+- (NSArray *)find:(NSString *)where orderBy:(NSString *)orderByAttribute ascending:(BOOL)ascending{
+   return [dbContext find:[modelClass description] where:where orderBy:orderByAttribute ascending:ascending];
+
+}
+- (NSArray *)find:(NSString *)where orderBy:(NSString *)orderByAttribute ascending:(BOOL)ascending take:(int)countItem{
+    return [dbContext find:[modelClass description] where:where orderBy:orderByAttribute ascending:ascending take:countItem];
+}
 @end
